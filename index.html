@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Dance!
+    </title>
+    <link rel="shortcut icon" type="image/png" href="images/icon.jpg"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    </head>
+    <STYLE>A {text-decoration: none; color: orange;} </STYLE>
+    <style>
+      body {
+          background: rgb(12, 27, 12);
+      }
+
+      h1 {
+          display: flexbox;
+          justify-content: center;
+          color: white;
+      }
+
+      #change::before {
+          content: "a dancer!";
+          color: orange;
+          animation: animate infinite 4.8s;
+          padding-left: 10px;
+      }
+
+      @keyframes animate {
+
+          10% {
+              content: "a choreographer!";
+              color: orange;
+          }
+
+          80% {
+              content: "an artist!";
+              color: orange;
+          }
+      }
+  </style>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Dance</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" href="styles.html">Styles</a>
+                  <a class="nav-link" href="classes.html">Classes</a>
+                  <a class="nav-link" href='contact_us.html'>Contact us</a>
+                </div>
+              </div>
+            </div>
+          </nav>    
+          <div class="hero-image">
+            <div class="hero-text">
+            <i><h1 id="chandu">I am Greeshma C Shekar</h1>
+              <h2>I am<span id="change"></span></h2></i>
+              <button id="greesh" onclick="location.href='contact_us.html';">Join now</button>
+            </div>
+            </div>
+            <br/>
+          <div class="container-fluid">
+            <p id="dance">
+              Dance is a performing art form consisting of sequences of movement, either improvised or purposefully selected.
+              <br/>
+              <i>"Dance to express, not to impress !"</i>
+            </p>
+          </div>
+          <br/>
+          <!-- <div id="gallery" class="container-fluid">     
+          <h2><i>Dance your hearts out !</i></h2>
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+          <br/>
+          <img src="images/salsa.jpg" class="rounded float-left dance-image" alt="Salsa">
+          <img src="images/classical.jpg" class="rounded float-right dance-image" alt="Bharthanatyam">
+          <img src="images/dance.jpg" class="rounded float-right dance-image" alt="Ballet">
+          -->
+          <br/>
+          <h2 id="font"><i>Dance your hearts out !</i></h2>
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+          <br/>
+          <div id="carouselExampleControls" class="carousel slide container-fluid" data-ride="carousel">
+            <div class="carousel-inner slide-image">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/classical.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item slide-image">
+                <img class="d-block w-100" src="images/dance.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item slide-image">
+                <img class="d-block w-100" src="images/salsa.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+          <audio controls autoplay unhidden>
+            <source src="D:\WebDevolment\Dance\music\celtic-spirits-irish-bodhran-drums-and-classic-guitar-2964.mp3" type="audio/mp3">
+            <source src="D:\WebDevolment\Dance\music\celtic-spirits-irish-bodhran-drums-and-classic-guitar-2964.mp3" type="audio/mp3">
+            Turn on the audio!
+          </audio>
+          <br/>
+          <br/>
+          <br/>
+          <div id="copyright">
+            <br/>
+            copyright 2021 &#169
+            All rights reserved by <a href="https://www.linkedin.com/in/greeshma-c-shekar/">Greeshma C Shekar</a>     
+            <br/>
+          </div>
+          <br/>
+    </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
